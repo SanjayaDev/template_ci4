@@ -33,7 +33,7 @@
       <div class="page-content">
         <div class="page-header">
           <div class="container-fluid">
-            <h2 class="h5 no-margin-bottom"><?= isset($title) ? $title : "Dashboard"; ?></h2>
+            <h2 class="h5 no-margin-bottom"><?= isset($page) ? $page : "Dashboard"; ?></h2>
           </div>
         </div>
         <div class="container-fluid">

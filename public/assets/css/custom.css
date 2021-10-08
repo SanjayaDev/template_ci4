@@ -1,1 +1,38 @@
-/* your styles go here */
+/* LOGIN PAGE */
+
+.card-login {
+  border: 1px solid #1076AB;
+  width: 100%;
+  margin-top: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.card-login .input-group {
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+}
+
+.card-login .input-group label {
+  font-size: 17px;
+  display: block;
+}
+
+.card-login .input-group input {
+  width: 100%;
+  border: 1px solid #1076AB;
+  background-color: #292b2c;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.card-login .input-group small {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card-login .input-group input:focus {
+  outline: none;
+}
