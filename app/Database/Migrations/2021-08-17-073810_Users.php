@@ -38,6 +38,10 @@ class Users extends Migration
 			"user_status_id" => [
 				"type" => "int",
 			],
+			"photo_path" => [
+				"type" => "text",
+				"null" => TRUE
+			],
 			"access_id" => [
 				"type" => "int",
 			],

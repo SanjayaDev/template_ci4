@@ -40,4 +40,23 @@ class Validation
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------
+	public $login = [
+		"name" => [
+			"rules" => "required|alpha_numeric_space",
+			"label" => "Username",
+			"errors" => [
+				"required" => "Username wajib di isi!",
+				"alpha_numeric_space" => "Username tidak boleh mengandung karakter khusus!"
+			]
+		],
+		"password" => [
+			"rules" => "required|min_length[8]|alpha_numeric_space",
+			"label" => "Password",
+			"errors" => [
+				"required" => "Password wajib di isi!",
+				"min_length" => "Password minimal 8 karakter!",
+				"alpha_numeric_space" => "Password tidak boleh mengandung karakter khusus!"
+			]
+		]
+	];
 }

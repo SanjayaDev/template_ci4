@@ -28,6 +28,10 @@
   border-radius: 5px;
 }
 
+.card-login .input-group input.input-invalid {
+  border: 1px solid red;
+}
+
 .card-login .input-group small {
   display: block;
   margin-bottom: 10px;

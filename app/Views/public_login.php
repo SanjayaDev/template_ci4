@@ -24,14 +24,16 @@
       <div class="col-sm-5 col-lg-4 mx-auto mt-5">
         <div class="card-login shadow">
           <h4 class="text-center">LOGIN</h4>
-          <form action="">
+          <form action="/login" method="POST">
             <div class="input-group">
               <label>Username</label>
-              <input type="text">
+              <input type="text" name="name" <?= $validation->hasError("name") ? "class='input-invalid'" : ""; ?>>
+              <small class="text-danger"><?= $validation->getError("name") ?></small>
             </div>
             <div class="input-group">
               <label>Password</label>
-              <input type="password">
+              <input type="password" name="password" <?= $validation->hasError("password") ? "class='input-invalid'" : ""; ?>>
+              <small class="text-danger"><?= $validation->getError("password") ?></small>
               <small><a href="">Lupa Password?</a></small>
             </div>
 

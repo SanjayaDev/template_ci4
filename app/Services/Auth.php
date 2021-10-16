@@ -1,9 +1,19 @@
 <?php namespace App\Services;
 
 use App\Models\Authentication_model;
+use App\Models\Users;
 use stdClass;
 
-class Authentication_login {
+class Auth {
+  public static $is_login = FALSE;
+
+  public static function auth()
+  {
+    if (self::$is_login) {
+      $user_model = new Users();
+      
+    }
+  }
 
   public static function auth_login()
   {
@@ -31,8 +41,9 @@ class Authentication_login {
             ];
 
             $model_auth->save($data_update);
+            self::$is_login = TRUE;
           } else {
-
+            $response->message = "Session berakhir! Silahkan login kembali!";
           }
         } else {
           $response->message = "Session anda telah logout!";
